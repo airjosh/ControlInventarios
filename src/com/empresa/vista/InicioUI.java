@@ -10,17 +10,19 @@ import com.empresa.controladores.EliminarProductos;
 import com.empresa.controladores.InsertarProductos;
 import com.empresa.controladores.MostrarProductos;
 import com.empresa.modelo.Producto;
-import java.awt.Component;
 import java.util.ArrayList;
-import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ja1020
+ * @author Darina Michelle Escobar López
+ * @author Axel Nicolás Marin Marinez
+ * @author Kury Juárez Garcia
+ * @author Humberto Garcia Bacilio
+ * @author Miguel Ángel Rodríguez Núñez
+ * @author Fabián Enrique Moreno Noriega
  */
 public class InicioUI extends javax.swing.JFrame {
 
@@ -36,9 +38,7 @@ public class InicioUI extends javax.swing.JFrame {
         
         setBounds(0, 0, 470, 650); // posicion inicial de la ventana y su tamaño
         setLocationRelativeTo(this); // ventana en el centro de la pantalla
-        //setDefaultCloseOperation(EXIT_ON_CLOSE); //termina el programa al dar clic en el boton CERRAR
         setTitle("Sistema de Control de Inventario."); //establece el Titulo de la ventana principal
-        //jTabbedPane1.getTabComponentAt(1).setName("create");
         setUpModel();
     }
 
@@ -589,8 +589,7 @@ public class InicioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jCreateMouseClicked
 
     private void jTabbedPane1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane1MousePressed
-        // TODO add your handling code here:
-        //System.out.println();
+
         int indice = jTabbedPane1.getSelectedIndex();
         
         switch(indice){
@@ -620,8 +619,6 @@ public class InicioUI extends javax.swing.JFrame {
                 break;
             default: break;
         }
-        
-       // System.out.println("exite el panel? " + panel);
     }//GEN-LAST:event_jTabbedPane1MousePressed
 
     private void jTextFieldInsertNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldInsertNombreActionPerformed
@@ -641,7 +638,6 @@ public class InicioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldInsertDescripcionActionPerformed
 
     private void jButtonInsertActionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInsertActionActionPerformed
-        // TODO add your handling code here:
         // boton insertar; un nuevo registro fue presionado
         
         JPanel panel = (JPanel) jTabbedPane1.getComponentAt(0);
@@ -664,7 +660,6 @@ public class InicioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonInsertActionActionPerformed
 
     private void jButtonEditMostrarActionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditMostrarActionActionPerformed
-        // TODO add your handling code here:
         // boton mostrar; se consulta un solo registro para editarlo (si existe)
         int indice = jTabbedPane1.getSelectedIndex();
         JPanel panel = (JPanel) jTabbedPane1.getComponentAt(indice);
@@ -673,7 +668,6 @@ public class InicioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonEditMostrarActionActionPerformed
 
     private void jButtonEditActionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditActionActionPerformed
-        // TODO add your handling code here:
         // boton editar; se modifica uno de los articulos
         int indice = jTabbedPane1.getSelectedIndex();
         JPanel panel = (JPanel) jTabbedPane1.getComponentAt(indice);
@@ -686,7 +680,6 @@ public class InicioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonEditActionActionPerformed
 
     private void jButtonDeleteActionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDeleteActionActionPerformed
-        // TODO add your handling code here:
         // boton eliminar; se elimina definitivamente uno de los productos
         int indice = jTabbedPane1.getSelectedIndex();
         JPanel panel = (JPanel) jTabbedPane1.getComponentAt(indice);

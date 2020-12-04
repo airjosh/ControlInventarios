@@ -13,7 +13,12 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Team 1
+ * @author Darina Michelle Escobar López
+ * @author Axel Nicolás Marin Marinez
+ * @author Kury Juárez Garcia
+ * @author Humberto Garcia Bacilio
+ * @author Miguel Ángel Rodríguez Núñez
+ * @author Fabián Enrique Moreno Noriega
  */
 public class MostrarProductos {
     

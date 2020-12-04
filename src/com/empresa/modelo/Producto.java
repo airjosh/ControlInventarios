@@ -9,7 +9,12 @@ import java.io.Serializable;
 
 /**
  *
- * @author Team 1
+ * @author Darina Michelle Escobar López
+ * @author Axel Nicolás Marin Marinez
+ * @author Kury Juárez Garcia
+ * @author Humberto Garcia Bacilio
+ * @author Miguel Ángel Rodríguez Núñez
+ * @author Fabián Enrique Moreno Noriega
  */
 public class Producto implements Serializable {
     
@@ -33,9 +38,7 @@ public class Producto implements Serializable {
     }
     public Producto(){
     }
-    
-    
-    
+
     // getters y setters
 
     public Integer getId() {
@@ -77,7 +80,5 @@ public class Producto implements Serializable {
     public void setPrecio(Integer precio) {
         this.precio = precio;
     }
-   
-    
 
 }
